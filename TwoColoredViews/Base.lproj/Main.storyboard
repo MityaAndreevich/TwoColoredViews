@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,34 +13,39 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TwoColoredViews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="41" verticalCompressionResistancePriority="41" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cGH-R4-JQB">
-                                <rect key="frame" x="5" y="10" width="310" height="220"/>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="41" verticalCompressionResistancePriority="41" translatesAutoresizingMaskIntoConstraints="NO" id="cGH-R4-JQB">
+                                <rect key="frame" x="20" y="20" width="374" height="408"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="41" verticalCompressionResistancePriority="41" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4o2-uq-N2M">
-                                <rect key="frame" x="5" y="250" width="310" height="220"/>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="41" verticalCompressionResistancePriority="41" translatesAutoresizingMaskIntoConstraints="NO" id="4o2-uq-N2M">
+                                <rect key="frame" x="20" y="468" width="374" height="408"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cGH-R4-JQB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="FpO-Z1-0ik"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cGH-R4-JQB" secondAttribute="trailing" constant="5" id="GRM-Ys-EAb"/>
-                            <constraint firstItem="cGH-R4-JQB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="XUq-xs-ZQc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4o2-uq-N2M" secondAttribute="trailing" constant="5" id="cOF-JQ-YX1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4o2-uq-N2M" secondAttribute="bottom" constant="10" id="fnp-51-Rpo"/>
-                            <constraint firstItem="4o2-uq-N2M" firstAttribute="top" secondItem="cGH-R4-JQB" secondAttribute="bottom" constant="10" id="pwh-gr-hzI"/>
-                            <constraint firstItem="4o2-uq-N2M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="xyd-IO-bfj"/>
+                            <constraint firstItem="cGH-R4-JQB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7id-ly-EHx"/>
+                            <constraint firstItem="4o2-uq-N2M" firstAttribute="top" secondItem="cGH-R4-JQB" secondAttribute="bottom" constant="40" id="BDR-0U-qFD"/>
+                            <constraint firstItem="cGH-R4-JQB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hdj-y4-Rmm"/>
+                            <constraint firstAttribute="bottom" secondItem="4o2-uq-N2M" secondAttribute="bottom" constant="20" id="MKG-dl-oFG"/>
+                            <constraint firstItem="cGH-R4-JQB" firstAttribute="leading" secondItem="4o2-uq-N2M" secondAttribute="leading" id="Yfz-JV-xgi"/>
+                            <constraint firstItem="cGH-R4-JQB" firstAttribute="centerX" secondItem="4o2-uq-N2M" secondAttribute="centerX" id="Yuu-PB-DmN"/>
+                            <constraint firstItem="4o2-uq-N2M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aOl-bC-m7C"/>
+                            <constraint firstItem="cGH-R4-JQB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="bPP-lf-XPv">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cGH-R4-JQB" secondAttribute="trailing" constant="20" id="fhP-Th-JJR"/>
+                            <constraint firstItem="cGH-R4-JQB" firstAttribute="height" secondItem="4o2-uq-N2M" secondAttribute="height" id="mR7-p2-8tj"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15" y="72.5"/>
+            <point key="canvasLocation" x="15" y="71.25"/>
         </scene>
     </scenes>
     <resources>
